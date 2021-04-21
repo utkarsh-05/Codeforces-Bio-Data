@@ -8,6 +8,10 @@
     --border-radius: 10px
 }
 
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 body{
     background-color: var(--light-bg);
     font-weight: 500;
@@ -48,7 +52,7 @@ body{
 #button{
     width: 300px;
     font-size: 2rem;
-    color: rgb(175, 21, 167);
+    color: var(--light-font);
     border-radius: var(--border-radius);
 }
 
@@ -75,7 +79,7 @@ body{
     align-items: flex-start;
     border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
-.elements{
+.font1, .font2{
     height: 5vh;
     width: 47vw;
     /* font-weight: 500; */
@@ -85,15 +89,13 @@ body{
     align-items: center;
     /* background-color: cyan; */
     margin-top: 0.25rem;
-}
-.elements{
     font-weight: 900;
     font-size: 2rem;
     color: var(--dark-font);
 }
 .second-half{
     display: flex;
-    height :78vh;
+    height :78vh;   
     width: 47vw;
     /* margin-left: 1vw; */
     background-color: var(--dark-bg);
