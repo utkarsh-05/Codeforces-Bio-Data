@@ -1,18 +1,31 @@
+/* css variables */
+
+:root{
+    --dark-bg: #00509d;
+    --light-bg: #1e91d0;
+    --dark-font: white;
+    --light-font: black;
+    --border-radius: 10px
+}
+
 body{
-    background-color: lightblue;
+    background-color: var(--light-bg);
     font-weight: 500;
     display: flex;
     flex-wrap: wrap;
 }
 #heading{
-    justify-content: center;
-    align-content: center;
-    background-color: rgb(80, 79, 160);
-    color : red;
-    display: flex;
+    text-align: center;
+    /* justify-content: center;
+    align-content: center; */
+    background-color: var(--dark-bg);
+    color : var(--dark-font);
+    /* display: flex; */
     font-size: 3rem;
     margin-top: 0px;
-    width: 100vw;
+    width: 80vw;
+    border-radius: var(--border-radius);
+    margin: 0 auto;
 }
 #first{
     display: flex;
@@ -33,9 +46,16 @@ body{
     border-color: white;
 }
 #button{
-    width: auto;
+    width: 300px;
     font-size: 2rem;
     color: rgb(175, 21, 167);
+    border-radius: var(--border-radius);
+}
+
+#button:hover{
+    background: white;
+    cursor: pointer;
+    opacity: 0.8;
 }
 .input{
     margin-top: 0.5rem;
@@ -48,43 +68,40 @@ body{
     display: flex;
     height :78vh;
     width: 50vw;
-    background-color: red;
+    background-color: var(--dark-bg);
     /* color: blue */
     margin-top: 1rem;
     flex-wrap: wrap;
     align-items: flex-start;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 .elements{
     height: 5vh;
     width: 47vw;
     /* font-weight: 500; */
-    font-style: bold;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: cyan; */
     margin-top: 0.25rem;
 }
-.font1{
+.elements{
     font-weight: 900;
     font-size: 2rem;
-    color: rgb(2, 238, 255);
-}
-.font2{
-    font-weight: 900;
-    font-size: 2rem;
-    color: rgb(156, 26, 243);
+    color: var(--dark-font);
 }
 .second-half{
     display: flex;
     height :78vh;
     width: 47vw;
     /* margin-left: 1vw; */
-    background-color: lightsalmon;
+    background-color: var(--dark-bg);
     /* color: red; */
     margin-top: 1rem;
     flex-wrap: wrap;
     align-items: flex-start;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 
 #body-problems{
